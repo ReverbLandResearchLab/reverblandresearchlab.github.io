@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:image" content="{{ site.url }}/assets/img/portfolio/industrial.jpg">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  </head>
+  <body class="page-body">
+    <header class="site-header">
+      <a class="brand" href="{{ '/' | relative_url }}" aria-label="ReverbLand Research Lab home"><span class="brand-mark">RL</span><span>ReverbLand<span class="brand-muted"> / R.LAB</span></span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="{{ '/' | relative_url }}#services">Services</a><a href="{{ '/' | relative_url }}#work">Selected work</a><a href="{{ '/' | relative_url }}#approach">Approach</a><a class="nav-cta" href="mailto:{{ site.email }}">Start a conversation</a>
+      </nav>
+    </header>
+    <main class="page-content">{{ content }}</main>
+    <footer class="site-footer"><span>ReverbLand Research Lab</span><span>Python · ERP/MES · databases · industrial systems</span><a href="mailto:{{ site.email }}">{{ site.email }}</a></footer>
+  </body>
+</html>

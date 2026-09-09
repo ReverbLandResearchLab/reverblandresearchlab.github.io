@@ -11,21 +11,21 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-#theme: jekyll-agency
-remote_theme: raviriley/agency-jekyll-theme
+# Local layout and stylesheet; no remote agency theme.
 
-url    : "" # the base hostname & protocol for your site, e.g. http://example.com
+url    : "https://rlrl.pl"
 baseurl: "" # the subpath of your site, e.g. /blog
 
 title      : ReverbLand Research Lab
 email      : dadmin.dgor@gmail.com #this is also the email contact forms will go to
-description: "Nasza firma specjalizuje się w tworzeniu elektroniki i programów na miarę, a także prowadzi działalność badawczą. Oferujemy usługi z zakresu projektowania układów elektronicznych, programowania mikrokontrolerów, implementacji systemów wbudowanych oraz prototypowania. Ponadto, mamy doświadczenie w obszarach takich jak wszelkiego rodzaju bazy danych, projektowanie/druk 3D, technologie backend oraz embedded. Skontaktuj się z nami, aby dowiedzieć się więcej o naszej ofercie!"
+description: "Legacy ERP and MES modernization, Python backend engineering, database integration and practical automation for manufacturing and operations-heavy businesses."
 author     : Daniel Górny
 logo:     #optional, defaults to site title
  path: assets\img\reverbland-white.png
  height: 52 #height in px, defaults to 52px
 
-locale: "pl-PL" # See available languages in _data/sitetext.yml
+locale: "en-GB"
+lang: "en"
 
 analytics:
   google: #Google Analytics tracking code here
@@ -39,5 +39,4 @@ markdown: kramdown
 # Details: https://help.formspree.io/hc/en-us/articles/360017735154-How-to-prevent-spam
 formspree_form_path: "f/mqkvbldr"
 
-plugins:
-  - jekyll-remote-theme
+plugins: []
