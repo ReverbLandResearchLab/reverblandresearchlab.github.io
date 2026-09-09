@@ -1,0 +1,12 @@
+/* Keep work-card actions in document flow so long mobile copy cannot overlap them. */
+.work-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.work-link {
+  align-self: flex-start;
+  margin-top: auto;
+  padding-top: 26px;
+  position: static;
+}
