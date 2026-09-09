@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Legacy systems, made useful again
+description: "ReverbLand helps manufacturing and operations-heavy businesses modernize legacy ERP, MES and database systems, connect industrial data, and automate practical workflows."
 ---
 
 <section class="hero" aria-labelledby="hero-title">
